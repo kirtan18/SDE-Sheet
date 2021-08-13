@@ -1,5 +1,9 @@
 https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1#
 
+///////////////////////////////////////////////////////////////////////////////
+T.C = O(NlogN)
+S.C = O(N)    
+
 
 bool compare(const pair<int,int> &a,const pair<int,int> &b){
     return (a.second < b.second);
