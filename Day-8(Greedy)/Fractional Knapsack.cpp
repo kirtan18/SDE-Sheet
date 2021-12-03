@@ -3,6 +3,11 @@ https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1#
 T.C = O(NlogN)
 S.C = O(1)
   
+struct Item{
+    int value;
+    int weight;
+}  
+  
 bool comp(Item a , Item b){
     double r1 = double(a.value) / double(a.weight);
     double r2 = double(b.value) / double(b.weight);
