@@ -1,4 +1,14 @@
 https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#
+struct Job 
+{ 
+    int id;   // Job Id 
+    int dead; // Deadline of job 
+    int profit; // Profit if job is over before or on deadline 
+};
+
+bool compare (Job a , Job b){
+    return (a.profit > b.profit);
+}
 
 vector<int> JobScheduling(Job arr[], int n) 
     { 
